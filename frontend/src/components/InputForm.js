@@ -101,6 +101,7 @@ const InputForm= () => {
     return (
         
     <form className = 'form-div mx-auto' onSubmit={onSubmit}>
+        <label>First Name</label>
         <input 
         type='text'
         placeholder= "First Name"
@@ -112,6 +113,7 @@ const InputForm= () => {
         <div className="text-danger  m-2">{errors.first_name}</div>
         :<div></div>
         }
+         <label>Last Name</label>
          <input 
         type='text'
         placeholder= "Last Name "
@@ -123,6 +125,7 @@ const InputForm= () => {
         <div className="text-danger  m-2">{errors.last_name}</div>
         :<div></div>
         }
+         <label>Birthday</label>
         <input 
         type='date'
         placeholder= "Birthday"
@@ -134,6 +137,7 @@ const InputForm= () => {
         <div className="text-danger  m-2">{errors.birthday}</div>
         :<div></div>
         }
+         <label>Email</label>
          <input 
         type='email'
         placeholder= "Email"
@@ -149,23 +153,25 @@ const InputForm= () => {
         <div className="text-danger  m-2">{errors.email}</div>
         :<div></div>
         }
+         <label>Password</label>
          <input 
         type='password'
         placeholder= "Password"
         onChange= {changePassword}
         value = {password}
-        className = 'form-group w-75 px-2 m-2'
+        className = 'form-group w-50 px-2 m-2'
         />
          {errors.password? 
         <div className="text-danger  m-2">{errors.password}</div>
         :<div></div>
         }
+         <label>Confirm Password</label>
          <input 
         type='password'
-        placeholder= "Re-type password"
+        placeholder= "Retype password"
         onChange={changeRe_password}
         value = {re_password}
-        className = 'form-group w-75 m-2 px-2'
+        className = 'form-group w-50 m-2 px-2'
         />
          {errors.re_password? 
         <div className="text-danger  m-2">{errors.re_password}</div>
