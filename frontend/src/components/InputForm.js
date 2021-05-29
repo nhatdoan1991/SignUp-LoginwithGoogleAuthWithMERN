@@ -49,7 +49,7 @@ const InputForm= () => {
             password:password
         }
 
-        axios.post('http://localhost:3000/users',user)
+        axios.post('https://momsrecipebackend.herokuapp.com/users',user)
         .then()
         
         setBirthday("")
